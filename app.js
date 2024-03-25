@@ -8,6 +8,7 @@ const clear = document.querySelector("#clear")
 const previousScreen = document.querySelector("#previous")
 const currentScreen = document.querySelector("#current")
 const equal = document.querySelector(".equal")
+const decimal = document.querySelector(".decimal")
 
 numbers.forEach((number) => number.addEventListener('click', function (e) {
     handleNumber(e.target.textContent)
@@ -28,7 +29,6 @@ equal.addEventListener('click', function () {
     } else {
         currentScreen.textContent = previousValue.slice(0, 10) + "...";
     }
-
 })
 
 clear.addEventListener('click', function () {
@@ -37,6 +37,10 @@ clear.addEventListener('click', function () {
     operator = '+'
     previousScreen.textContent = ''
     currentScreen.textContent = currentValue
+})
+
+decimal.addEventListener('click', function () {
+    addDecimal();
 })
 
 function handleNumber(num) {
@@ -72,4 +76,10 @@ function calculate() {
 
 function roundNumber(num) {
     return Math.round(num * 10000) / 10000;
+}
+
+function addDecimal() {
+    if (!currentValue.includes(".")) {
+        currentValue += ".";
+    }
 }
