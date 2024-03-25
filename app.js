@@ -35,7 +35,7 @@ clear.addEventListener('click', function () {
     previousValue = '0'
     currentValue = ''
     operator = '+'
-    previousScreen.textContent = previousValue
+    previousScreen.textContent = ''
     currentScreen.textContent = currentValue
 })
 
