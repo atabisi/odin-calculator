@@ -10,6 +10,17 @@ body {
     height: 100vh;
 }
 
+#header {
+    background-color: #1C323B;
+    color: #e9c46a;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
 #calculator {
     background-color: #1C323B;
     border-radius: 10px;
@@ -41,13 +52,13 @@ body {
 #previous {
     color: darkslategray;
     height: 14x;
-    padding: 1px;
+    padding: 0px 5px;
     font-size: 14px;
 }
 
 #current {
     height: 22px;
-    padding: 3px;
+    padding: 5px;
     font-size: 22px;
 }
 
