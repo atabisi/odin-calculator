@@ -62,13 +62,13 @@ body {
     font-size: 22px;
 }
 
-#clear {
+.clear {
     border: solid 3px grey;
     background-color: #ccd5ae;
     color: black;
 }
 
-#clear:hover {
+.clear:hover {
     background-color: grey;
     color: white
 }
